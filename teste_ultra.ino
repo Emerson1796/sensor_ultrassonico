@@ -16,9 +16,9 @@ void setup() {
 
 void loop() {
   delay(50);
-  int precisao = sonar1.ping_median(10);
-  int precisao = sonar2.ping_median(10);
-  Serial.print(sonar1.convert_cm(precisao));
+  int precisao1 = sonar1.ping_median(10);
+  int precisao2 = sonar2.ping_median(10);
+  Serial.print(sonar1.convert_cm(precisao1));
   Serial.print(";");
-  Serial.println(sonar2.convert_cm(precisao));
+  Serial.println(sonar2.convert_cm(precisao2));
 }
